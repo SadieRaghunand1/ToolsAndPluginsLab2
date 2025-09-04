@@ -12,7 +12,7 @@ public class CubeID : MonoBehaviour
 }
 
 #if UNITY_EDITOR
-[CustomEditor(typeof(CubeID))]
+[CustomEditor(typeof(CubeID)), CanEditMultipleObjects] 
 public class CubeEditor : Editor
 {
     public override void OnInspectorGUI()
