@@ -23,7 +23,7 @@ public class CubeEditor : Editor
         //Make button for selecting all cubes
         if (GUILayout.Button("Select all cubes"))
         {
-            var allCubeBehaviour = GameObject.FindObjectsOfType<CubeID>();
+            CubeID[] allCubeBehaviour = GameObject.FindObjectsOfType<CubeID>();
             var allCubeObjects = allCubeBehaviour
             .Select(cube => cube.gameObject)
             .ToArray();
@@ -40,9 +40,9 @@ public class CubeEditor : Editor
          
         //Making the Disable and enable button, makes the cubes disappear and disables in hierarchy
         if (GUILayout.Button("Disable/Enable all cubes", GUILayout.Height(40)))
-        //Trying to turn this button green(not working yet lol) 
+        //Trying to turn this button green 
         {  
-             var cachedColor = GUI.backgroundColor;
+             Color cachedColor = GUI.backgroundColor;
              GUI.backgroundColor = Color.green;
              foreach (var cube in GameObject.FindObjectsOfType<CubeID>(true)) 
              {
