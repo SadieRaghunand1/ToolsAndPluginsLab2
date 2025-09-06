@@ -60,7 +60,7 @@ public class SphereEditor : Editor
             _style.normal.textColor = Color.black;
         }
 
-        //Making the Disable and enable button, makes the spheress disappear and disables in hierarchy
+        //Making the Disable and enable button, makes the spheres disappear and disables in hierarchy
         if (GUILayout.Button("Disable/Enable all spheres", _style))
         //Change button color based on if on/off 
         {
@@ -73,9 +73,10 @@ public class SphereEditor : Editor
         }
     }
 
-
+    //Make a texture for the button to allow changing the background color
     private Texture2D MakeButtonTexture(int _width, int _height, Color _color)
     {
+        //Create texture pixels of specified height, width, and color 
         Color[] pix = new Color[_width * _height];
 
         for (int i = 0; i < pix.Length; i++)
@@ -85,6 +86,7 @@ public class SphereEditor : Editor
         result.SetPixels(pix);
         result.Apply();
 
+        //return texture
         return result;
     }
 }
