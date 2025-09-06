@@ -51,12 +51,12 @@ public class SphereEditor : Editor
         //(green - currently on, purple/pink - currently off)
         if (_enabled)
         {
-            _style.normal.background = MakeButtonTexture(10, 40, _enabledColor);
+            _style.normal.background = MakeButtonTexture(40, 40, _enabledColor);
             _style.normal.textColor = Color.black;
         }
         else
         {
-            _style.normal.background = MakeButtonTexture(10, 40, _disabledColor);
+            _style.normal.background = MakeButtonTexture(40, 40, _disabledColor);
             _style.normal.textColor = Color.black;
         }
 
