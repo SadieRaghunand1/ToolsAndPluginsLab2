@@ -8,9 +8,18 @@ using System.Runtime.CompilerServices;
 using UnityEditor;
 #endif
 
+[ExecuteInEditMode]
 public class SphereID : MonoBehaviour
 {
     public float size;
+
+
+    private void Update()
+    {
+        //Change this cube's scale
+        transform.localScale = new Vector3(size, size, size);
+
+    }
 }
 
 #if UNITY_EDITOR
@@ -21,6 +30,10 @@ public class SphereEditor : Editor
     {
         base.OnInspectorGUI();
         EditorGUILayout.BeginHorizontal();
+
+        //Get this cube's script for the size
+        SphereID _thisSphere = (SphereID)target;
+
 
         //Make button for selecting all spheres
         if (GUILayout.Button("Select all spheres"))
@@ -71,6 +84,8 @@ public class SphereEditor : Editor
                 sphere.gameObject.SetActive(!sphere.gameObject.activeSelf);
             }
         }
+
+        CheckForSizeWarning(_thisSphere.size);
     }
 
     //Make a texture for the button to allow changing the background color
@@ -88,6 +103,16 @@ public class SphereEditor : Editor
 
         //return texture
         return result;
+    }
+
+
+    //Generate warning if the cube's size is greater than 2
+    private void CheckForSizeWarning(float _size)
+    {
+        if (_size > 2)
+        {
+            EditorGUILayout.HelpBox("Size cannot be greater than 2!", MessageType.Warning);
+        }
     }
 }
 

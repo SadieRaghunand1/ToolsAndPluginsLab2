@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc741c1428d065d488b4d142ac5f9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
 --- !u!1 &101150537
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664a1f358182a284785a6d74b5f9c6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
 --- !u!1 &184505213
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664a1f358182a284785a6d74b5f9c6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
 --- !u!1 &222386775
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc741c1428d065d488b4d142ac5f9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
 --- !u!1 &562409095
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc741c1428d065d488b4d142ac5f9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
 --- !u!1 &638704386
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc741c1428d065d488b4d142ac5f9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,7 +1140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc741c1428d065d488b4d142ac5f9cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
 --- !u!1 &1376770586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,7 +1259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664a1f358182a284785a6d74b5f9c6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
 --- !u!1 &1592960842
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664a1f358182a284785a6d74b5f9c6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
 --- !u!1 &1989394013
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,7 +1497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664a1f358182a284785a6d74b5f9c6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

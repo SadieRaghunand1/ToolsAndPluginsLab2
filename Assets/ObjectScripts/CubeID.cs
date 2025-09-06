@@ -2,23 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Unity.VisualScripting;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
+
+[ExecuteInEditMode]
 public class CubeID : MonoBehaviour
 {
     public float size;
+
+    private void Update()
+    {
+        //Change this cube's scale
+        transform.localScale = new Vector3(size, size, size);
+
+    }
 }
 
 #if UNITY_EDITOR
 [CustomEditor(typeof(CubeID)), CanEditMultipleObjects] 
 public class CubeEditor : Editor
 {
+    
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
         EditorGUILayout.BeginHorizontal();
+
+        //Get this cube's script for the size
+        CubeID _thisCube = (CubeID)target;
 
         //Make button for selecting all cubes
         if (GUILayout.Button("Select all cubes"))
@@ -70,6 +85,8 @@ public class CubeEditor : Editor
             }
         }
 
+        CheckForSizeWarning(_thisCube.size);
+
       
      }
 
@@ -89,6 +106,15 @@ public class CubeEditor : Editor
 
         //return texture
         return result;
+    }
+
+    //Generate warning if the cube's size is greater than 2
+    private void CheckForSizeWarning(float _size)
+    {
+        if(_size > 2)
+        {
+            EditorGUILayout.HelpBox("Size cannot be greater than 2!", MessageType.Warning);
+        }
     }
 }
 #endif
