@@ -64,12 +64,12 @@ public class CubeEditor : Editor
         //(green - currently on, purple/pink - currently off)
         if (_enabled)
         {
-            _style.normal.background = MakeButtonTexture(40, 40, _enabledColor);
+            GUI.backgroundColor = _enabledColor;
             _style.normal.textColor = Color.black;
         }
         else
         {
-            _style.normal.background = MakeButtonTexture(40, 40, _disabledColor);
+            GUI.backgroundColor = _disabledColor;
             _style.normal.textColor = Color.black;
         }
 
